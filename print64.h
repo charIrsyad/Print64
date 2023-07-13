@@ -1,6 +1,6 @@
 #include "Arduino.h"
 
-void printu64(unsigned long long val) {
+void print64(unsigned long long val) {
     if (val < 10) {
         Serial.print((unsigned int) val);
     } else {
