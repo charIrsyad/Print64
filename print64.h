@@ -6,7 +6,7 @@ void print64(unsigned long long val) {
     } else {
         unsigned long long subproblem = val / 10;
         int remainder = val % 10;
-        printu64(subproblem);
+        print64(subproblem);
         Serial.print(remainder);
     }
 }
@@ -17,5 +17,5 @@ void print64(long long val) {
         Serial.print("-");
         positive *= -1;
     }
-    printu64(positive);
+    print64(positive);
 }
