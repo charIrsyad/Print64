@@ -11,7 +11,7 @@ void print64(unsigned long long val) {
     }
 }
 
-void print64(long long val) {
+void int_print64(long long val) {
     long long positive = val;
     if (val < 0) {
         Serial.print("-");
