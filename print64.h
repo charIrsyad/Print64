@@ -1,12 +1,12 @@
 #include "Arduino.h"
 
-void print64(unsigned long long val) {
+void uint_print64(unsigned long long val) {
     if (val < 10) {
         Serial.print((unsigned int) val);
     } else {
         unsigned long long subproblem = val / 10;
         int remainder = val % 10;
-        print64(subproblem);
+        uint_print64(subproblem);
         Serial.print(remainder);
     }
 }
@@ -17,5 +17,5 @@ void int_print64(long long val) {
         Serial.print("-");
         positive *= -1;
     }
-    print64(positive);
+    uint_print64(positive);
 }
